@@ -1,4 +1,39 @@
 body {
   background: #eee;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+.item {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin: 5px;
+}
+.test {
+  background-image: url(../img/js.png);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  border: 1px solid red;
+  width: 500px;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  margin: 20px;
+  border: 1px solid green;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(175, 251, 83);
 }
