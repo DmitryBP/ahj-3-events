@@ -2,9 +2,9 @@ body {
   background: #eee;
   text-align: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 .item {
   width: 100px;
@@ -17,9 +17,17 @@ body {
   background-size: cover;
 }
 
-.container {
+.menu {
   display: flex;
-  border: 1px solid red;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 500px;
+}
+
+.container {
+  cursor: url('../img/Hammer.cur'), auto;
+  display: flex;
+  border: 3px dashed red;
   width: 500px;
   height: 80vh;
   display: flex;
