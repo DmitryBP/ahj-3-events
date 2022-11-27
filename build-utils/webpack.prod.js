@@ -10,6 +10,6 @@ module.exports = {
     ],
   },
   mode: 'production',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   plugins: [new MiniCssExtractPlugin()],
 };
