@@ -10,10 +10,10 @@ export default class ScoreCounter {
     const score = document.getElementsByClassName('score');
     document.addEventListener('click', (e) => {
       const { target } = e;
-      console.log(target.className.includes('target'));
-      if (target.className.includes('target')) {
+      console.log(target.className.includes('test'));
+      if (target.className.includes('test')) {
         scoreCounter++;
-        score[0].innerHTML = `очки: ${scoreCounter}`;
+        score[0].innerHTML = `Очки: ${scoreCounter}`;
         console.log(score[0]);
       }
     });
