@@ -7,3 +7,12 @@
   height: 50px;
   background-color: rgb(175, 251, 83);
 }
+
+.heart {
+  color: red;
+  display: inline;
+}
+
+.heartBreak {
+  display: none;
+}
