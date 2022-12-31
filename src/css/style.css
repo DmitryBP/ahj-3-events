@@ -12,7 +12,7 @@ body {
   background: red;
   margin: 5px;
 }
-.img-js {
+.target {
   background-image: url(../img/js.png);
   background-size: cover;
 }

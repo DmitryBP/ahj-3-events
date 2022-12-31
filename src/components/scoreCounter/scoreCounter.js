@@ -1,34 +1,39 @@
 /* global document */
 // import RandomMooving from '../randomMooving/RandomMoov';
+// eslint-disable-next-line import/no-cycle
+import { randomMoveing } from '../../js/app';
 import './scoreStyle.css';
 
 export default class ScoreCounter {
   static score() {
-    const heartIcon = document.getElementsByClassName('heart');
-    const container = document.querySelector('.container');
+    let heartIcon = document.getElementsByClassName('heart');
+    const items = document.querySelectorAll('.item');
 
-    console.log(container);
     let scoreCounter = 0;
     let heartNumber = 2;
     const score = document.getElementsByClassName('score');
-    container.addEventListener('click', (e) => {
-      const { target } = e;
-      if (target.className.includes('img-js')) {
-        scoreCounter += 1;
-        score[0].innerHTML = `Очки: ${scoreCounter}`;
-      } else {
-        // heartBreak();
-
-        heartIcon[heartNumber].classList.add('heartBreak');
-        // console.log(heartNumber);
-        // console.log(heartIcon);
-        if (heartNumber > 0) {
-          heartNumber -= 1;
+    items.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        const { target } = e;
+        if (target.className.includes('target')) {
+          scoreCounter += 1;
+          score[0].innerHTML = `Очки: ${scoreCounter}`;
         } else {
-          // clearTimeout(gameLoop);
-          console.log('Game Over');
+          heartIcon[heartNumber].classList.add('heartBreak');
+          if (heartNumber > 0) {
+            heartNumber -= 1;
+          } else {
+            randomMoveing.stop();
+            heartNumber = 2;
+            scoreCounter = 0;
+            score[0].innerHTML = `Очки: ${scoreCounter}`;
+            heartIcon = Array.from(heartIcon);
+            heartIcon.forEach((element) => {
+              element.classList.remove('heartBreak');
+            });
+          }
         }
-      }
+      });
     });
   }
 }
