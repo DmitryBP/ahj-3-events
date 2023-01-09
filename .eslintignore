@@ -1,4 +1,4 @@
-dist
+docs
 coverage
 doc
 webpack.*.js
