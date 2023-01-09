@@ -26,7 +26,7 @@ module.exports = {
     extensions: ['*', '.js'],
   },
   output: {
-    path: path.resolve(__dirname, '..', './docs'),
+    path: path.resolve(__dirname, '..', './dist'),
     filename: 'bundle.js',
     clean: true,
   },
