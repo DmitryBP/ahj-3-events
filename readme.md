@@ -1,6 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/bwnn8uj49kjoe3ls?svg=true)](https://ci.appveyor.com/project/DmitryBP/ahj-3-events)
 
-[GH-Pages](https://dmitrybp.github.io/ahj-3-events/)
+[GH-Pages](https://dmitrybp.github.io/ahj-3-events/) 
 
 Легенда
 
