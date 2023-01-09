@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/bwnn8uj49kjoe3ls?svg=true)](https://ci.appveyor.com/project/DmitryBP/ahj-3-events)
+
 Легенда
 
 Вы решили доделать игру с гоблинами, поэтому нужно реализовать оставшуюся логику.
